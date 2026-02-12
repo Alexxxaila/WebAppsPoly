@@ -21,7 +21,7 @@
 	<header>
 		<h1><a href="https://github.com/Alexxxaila/ilyina-web-dev-2025-1" target="_blank">ILYINA-WEB-APPS</a></h1>
 		<div class="task">
-			<a class='task_link' href='./Lab1_20k_leagues_php/index.php' target="_blank">Лабораторная работа A-1</a>
+			<a class='task_link' href='./LabA-1/index.php' target="_blank">Лабораторная работа A-1</a>
 			<!--<a class='task_link' href='./lab2/index.html'>Лабораторная работа 2</a>
 			<a class="task_link" href="./lab3/index.html">Лабораторная работа 3</a>
 			<a class="task_link" href="./lab4/index.html">Лабораторная работа 4</a>
