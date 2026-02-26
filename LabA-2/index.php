@@ -3,14 +3,14 @@
 $title = "Ильина А.А. | Группа 241-352 | ЛР A-2 | Вариант 10";
 
 // Тип верстки
-$layout_type = 'E'; // A, B, C, D, E
+$layout_type = 'A'; // A, B, C, D, E
 ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title><?php echo $title; ?></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -39,8 +39,8 @@ $layout_type = 'E'; // A, B, C, D, E
         // 1. ИНИЦИАЛИЗАЦИЯ ПЕРЕМЕННЫХ
         // ----------------------------------------------
         $x_start = -10;          // начальное значение аргумента
-        $x_end = 40;              // конечное значение аргумента
-        $step = 1;                // шаг изменения аргумента
+        $x_end = 40;             // конечное значение аргумента
+        $step = 1;               // шаг изменения аргумента
 
         // ВЫЧИСЛЯЕМ КОЛИЧЕСТВО ШАГОВ АВТОМАТИЧЕСКИ
         $steps = (int)(($x_end - $x_start) / $step) + 1;

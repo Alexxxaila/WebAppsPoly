@@ -1,0 +1,159 @@
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ШАПКА — тёмно-зелёная */
+header {
+    flex-shrink: 0;
+    background-color: #1e3d2c;
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ОСНОВНОЙ БЛОК — светло-серый */
+main {
+    flex: 1 0 auto;
+    background-color: #ecf0f1;
+    color: #1a1a1a;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    color: #1e3d2c;
+    border-bottom: 2px solid #2e8b57;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin: 25px 0 15px;
+}
+
+/* ПОДВАЛ — тёмно-серый */
+footer {
+    flex-shrink: 0;
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    padding: 15px 20px;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    border-top: 1px solid #34495e;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* СТИЛИ ДЛЯ КАЛЬКУЛЯТОРА */
+.calculator {
+    max-width: 300px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.result {
+    background: #34495e;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+    border-bottom: 2px solid #2c3e50;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background: #ecf0f1;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.2s;
+    font-weight: bold;
+    background: #3498db;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-number {
+    background: #2ecc71;
+}
+
+/* Стиль для кнопки 0, чтобы занимала всю ширину */
+.zero-btn {
+    grid-column: span 3;
+}
+
+.btn-reset {
+    background: #e74c3c;
+    grid-column: span 3;
+}

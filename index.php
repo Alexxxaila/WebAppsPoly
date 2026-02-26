@@ -23,7 +23,8 @@
 		<div class="task">
 			<a class='task_link' href='./LabA-1/index.php' target="_blank">Лабораторная работа A-1</a>
 			<a class='task_link' href='./LabA-2/index.php' target="_blank">Лабораторная работа A-2</a>
-			<!--<a class="task_link" href="./lab3/index.html">Лабораторная работа 3</a>
+			<a class="task_link" href='./LabA-3/index.php' target="_blank">Лабораторная работа A-3</a>
+			<!--
 			<a class="task_link" href="./lab4/index.html">Лабораторная работа 4</a>
 			<a class="task_link" href="./lab5/index.html">Лабораторная работа 5</a>
 			<a class="task_link" href="./lab6/index.html">Лабораторная работа 6</a>
