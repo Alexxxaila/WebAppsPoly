@@ -1,0 +1,262 @@
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #2c3e50;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ШАПКА */
+header {
+    flex-shrink: 0;
+    background-color: #1e3d2c;
+    color: white;
+    padding: 15px 20px;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.header-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* КОНТЕЙНЕР */
+.container {
+    flex: 1;
+    max-width: 900px;
+    margin: 20px auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* ФОРМА */
+.test-form {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1e3d2c;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2e8b57;
+    box-shadow: 0 0 5px rgba(46, 139, 86, 0.3);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 100px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 5px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+}
+
+/* КНОПКА ОТПРАВКИ */
+.submit-btn {
+    background-color: #2e8b57;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #1e3d2c;
+    transform: translateY(-2px);
+}
+
+/* РЕЗУЛЬТАТЫ */
+.result-container {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 4px solid #2e8b57;
+}
+
+.result-success {
+    border-left-color: #27ae60;
+    background-color: #e8f5e9;
+}
+
+.result-error {
+    border-left-color: #e74c3c;
+    background-color: #ffebee;
+}
+
+/* КНОПКА ПОВТОРИТЬ */
+.back-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* ВЕРСИЯ ДЛЯ ПЕЧАТИ */
+.print-version {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.print-version .result-container {
+    border: 1px solid black;
+    background-color: white;
+    border-left: 3px solid black;
+}
+
+.print-version .result-success {
+    border-left-color: black;
+}
+
+.print-version .result-error {
+    border-left-color: black;
+}
+
+/* ПОДВАЛ */
+footer {
+    flex-shrink: 0;
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    padding: 15px 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #34495e;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .test-form {
+        padding: 15px;
+    }
+}
+
+@media print {
+    header, footer, .submit-btn, .back-button {
+        display: none;
+    }
+    
+    .test-form {
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+}
