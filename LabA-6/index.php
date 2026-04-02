@@ -168,8 +168,10 @@
             
             // Отправка письма, если установлен флажок (email уже проверен)
             if ($send_mail && !empty($email)) {
-                $plain_text = str_replace('<br>', "\r\n", strip_tags($out_text));
-                $plain_text = str_replace('----------------------------------------', '----------------------------------------', $plain_text);
+                // Сначала заменяем <br> на переносы строк
+                $plain_text = str_replace('<br>', "\r\n", $out_text);
+                // Потом удаляем остальные HTML-теги
+                $plain_text = strip_tags($plain_text);
                 
                 $subject = '=?UTF-8?B?' . base64_encode('Результаты математического тестирования') . '?=';
                 $headers = "From: auto@test.ru\r\n";

@@ -1,5 +1,6 @@
 #!/usr/bin/env php
 <?php
+date_default_timezone_set('Europe/Moscow');
 $email = file_get_contents('php://stdin');
 $logDir = __DIR__ . '/mail_logs';
 if (!is_dir($logDir)) mkdir($logDir, 0777, true);
