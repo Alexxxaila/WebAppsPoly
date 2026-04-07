@@ -27,11 +27,11 @@
 			<a class="task_link" href='./LabA-4/index.php' target="_blank">Лабораторная работа A-4</a>
 			<a class="task_link" href='./LabA-5/index.php' target="_blank">Лабораторная работа A-5</a>
 			<a class="task_link" href='./LabA-6/index.php' target="_blank">Лабораторная работа A-6</a>
-			<!--<a class="task_link" href="./lab7/index.html">Лабораторная работа 7</a>
-			<a class="task_link" href="./lab8/index.html">Лабораторная работа 8</a>
-			<a class="task_link" href="./lab9/index.html">Лабораторная работа 9</a>
-			<a class="task_link" href="./lab10/landing.html">Лабораторная работа 10</a>
-			<a class='task_link' href='./add-task1-2/add-task1-2.html'>Дополнительные задания 1-2</a>-->
+			<a class="task_link" href='./LabA-7/index.php' target="_blank">Лабораторная работа A-7</a>
+			<a class="task_link" href='./LabA-8/index.php' target="_blank">Лабораторная работа A-8</a>
+			<a class="task_link" href='./LabB-1/index.php' target="_blank">Лабораторная работа B-1</a>
+			<a class="task_link" href='./LabB-2/index.php' target="_blank">Лабораторная работа B-2</a>
+			<!--<a class='task_link' href='./add-task1-2/add-task1-2.html'>Дополнительные задания 1-2</a>-->
 		</div>
 	</header>
 
